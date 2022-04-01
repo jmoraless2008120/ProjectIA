@@ -7,12 +7,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainScreenController">
    <children>
-      <Label layoutX="244.0" layoutY="14.0" text="Welcome to ...">
+      <Label layoutX="248.0" layoutY="23.0" text="Welcome to ...">
          <font>
             <Font name="Comic Sans MS" size="17.0" />
          </font>
       </Label>
-      <Label layoutX="200.0" layoutY="59.0" text="Personalize your Event">
+      <Label layoutX="200.0" layoutY="59.0" text="Personalize your Day!">
          <font>
             <Font name="Javanese Text" size="22.0" />
          </font>

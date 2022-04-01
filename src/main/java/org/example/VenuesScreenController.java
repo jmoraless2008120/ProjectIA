@@ -12,4 +12,8 @@ public class VenuesScreenController {
         App.setRoot("MainScreen");
     }
 
+    public void initialize(){
+        new Venue("Newton College", "Ricardo Elias Aparicio 240", 500, 1300.67);
+    }
+
 }

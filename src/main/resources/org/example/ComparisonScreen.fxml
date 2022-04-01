@@ -28,42 +28,42 @@
             <Font name="Yu Gothic Light" size="15.0" />
          </font>
       </Label>
-      <MenuButton layoutX="46.0" layoutY="120.0" mnemonicParsing="false" text="MenuButton">
+      <MenuButton fx:id="eEventComparisonDropBox" layoutX="59.0" layoutY="120.0" mnemonicParsing="false" text="Event #">
         <items>
           <MenuItem mnemonicParsing="false" text="Action 1" />
           <MenuItem mnemonicParsing="false" text="Action 2" />
         </items>
       </MenuButton>
-      <MenuButton layoutX="201.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="MenuButton">
+      <MenuButton fx:id="vVenueComparison1DropBox" layoutX="201.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Venue #">
          <items>
             <MenuItem mnemonicParsing="false" text="Action 1" />
             <MenuItem mnemonicParsing="false" text="Action 2" />
          </items>
       </MenuButton>
-      <MenuButton layoutX="201.0" layoutY="187.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="MenuButton">
+      <MenuButton fx:id="vVenueComparison2DropBox" layoutX="201.0" layoutY="187.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Venue #">
          <items>
             <MenuItem mnemonicParsing="false" text="Action 1" />
             <MenuItem mnemonicParsing="false" text="Action 2" />
          </items>
       </MenuButton>
-      <MenuButton layoutX="201.0" layoutY="256.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="MenuButton">
+      <MenuButton fx:id="vVenueComparison3DropBox" layoutX="201.0" layoutY="256.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Venue #">
          <items>
             <MenuItem mnemonicParsing="false" text="Action 1" />
             <MenuItem mnemonicParsing="false" text="Action 2" />
          </items>
       </MenuButton>
-      <TextField layoutX="316.0" layoutY="120.0" prefHeight="25.0" prefWidth="73.0" promptText="Cost" />
-      <TextField layoutX="395.0" layoutY="120.0" prefHeight="25.0" prefWidth="73.0" promptText="Capacity" />
-      <TextField layoutX="477.0" layoutY="120.0" prefHeight="25.0" prefWidth="115.0" promptText="Address" />
-      <TextField layoutX="316.0" layoutY="187.0" prefHeight="25.0" prefWidth="73.0" promptText="Cost" />
+      <TextField editable="false" layoutX="316.0" layoutY="120.0" prefHeight="25.0" prefWidth="73.0" promptText="Cost" />
+      <TextField editable="false" layoutX="395.0" layoutY="120.0" prefHeight="25.0" prefWidth="73.0" promptText="Capacity" />
+      <TextField editable="false" layoutX="477.0" layoutY="120.0" prefHeight="25.0" prefWidth="115.0" promptText="Address" />
+      <TextField editable="false" layoutX="316.0" layoutY="187.0" prefHeight="25.0" prefWidth="73.0" promptText="Cost" />
       <TextField layoutX="395.0" layoutY="187.0" prefHeight="25.0" prefWidth="73.0" promptText="Capacity" />
-      <TextField layoutX="475.0" layoutY="187.0" prefHeight="25.0" prefWidth="115.0" promptText="Address" />
-      <TextField layoutX="316.0" layoutY="256.0" prefHeight="25.0" prefWidth="73.0" promptText="Cost" />
-      <TextField layoutX="395.0" layoutY="256.0" prefHeight="25.0" prefWidth="73.0" promptText="Capacity" />
-      <TextField layoutX="477.0" layoutY="256.0" prefHeight="25.0" prefWidth="115.0" promptText="Address" />
-      <TextField layoutX="37.0" layoutY="174.0" prefHeight="25.0" prefWidth="115.0" promptText="People Confirmed" />
-      <TextField layoutX="37.0" layoutY="215.0" prefHeight="25.0" prefWidth="115.0" promptText="Event Hours" />
-      <TextField layoutX="37.0" layoutY="256.0" prefHeight="25.0" prefWidth="115.0" promptText="Event Type" />
+      <TextField editable="false" layoutX="475.0" layoutY="187.0" prefHeight="25.0" prefWidth="115.0" promptText="Address" />
+      <TextField editable="false" layoutX="316.0" layoutY="256.0" prefHeight="25.0" prefWidth="73.0" promptText="Cost" />
+      <TextField editable="false" layoutX="395.0" layoutY="256.0" prefHeight="25.0" prefWidth="73.0" promptText="Capacity" />
+      <TextField editable="false" layoutX="477.0" layoutY="256.0" prefHeight="25.0" prefWidth="115.0" promptText="Address" />
+      <TextField editable="false" layoutX="37.0" layoutY="174.0" prefHeight="25.0" prefWidth="115.0" promptText="People Confirmed" />
+      <TextField editable="false" layoutX="37.0" layoutY="215.0" prefHeight="25.0" prefWidth="115.0" promptText="Event Hours" />
+      <TextField editable="false" layoutX="37.0" layoutY="256.0" prefHeight="25.0" prefWidth="115.0" promptText="Event Type" />
       <TextField editable="false" layoutX="113.0" layoutY="335.0" prefHeight="25.0" prefWidth="143.0" promptText="Output cheapest venue" />
       <TextField editable="false" layoutX="319.0" layoutY="335.0" prefHeight="25.0" prefWidth="178.0" promptText="Output highest capacity venue" />
    </children>
