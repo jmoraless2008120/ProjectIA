@@ -19,11 +19,11 @@
          </font>
       </Label>
       <DatePicker layoutX="319.0" layoutY="102.0" promptText="mm/dd/yy" />
-      <Separator layoutX="297.0" layoutY="180.0" orientation="VERTICAL" prefHeight="148.0" prefWidth="4.0" />
-      <Label layoutX="184.0" layoutY="209.0" text="People Invited" />
+      <Separator layoutX="297.0" layoutY="146.0" orientation="VERTICAL" prefHeight="182.0" prefWidth="0.0" />
+      <Label layoutX="186.0" layoutY="166.0" text="People Invited" />
       <Label layoutX="178.0" layoutY="251.0" text="Hour Availability" />
       <Label layoutX="205.0" layoutY="292.0" text="Event Type" />
-      <TextField layoutX="332.0" layoutY="205.0" promptText="Insert number" />
+      <TextField layoutX="331.0" layoutY="162.0" promptText="Insert number" />
       <TextField layoutX="332.0" layoutY="247.0" promptText="Insert time (00:00)" />
       <ChoiceBox fx:id="eEventTypeDropBox" layoutX="332.0" layoutY="288.0" prefWidth="150.0" />
       <Button fx:id="tercaryButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToMainScreen" text="Return" />
@@ -34,6 +34,8 @@
           <MenuItem mnemonicParsing="false" text="Action 2" />
         </items>
       </MenuButton>
+      <Label layoutX="194.0" layoutY="210.0" text="Ticket Price" />
+      <TextField layoutX="332.0" layoutY="206.0" promptText="Insert price in s/." />
    </children>
 
 </AnchorPane>

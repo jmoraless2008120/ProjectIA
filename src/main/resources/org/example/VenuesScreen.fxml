@@ -19,11 +19,11 @@
       <Label layoutX="195.0" layoutY="176.0" text="Address" />
       <Label layoutX="193.0" layoutY="233.0" text="Capacity" />
       <Label layoutX="216.0" layoutY="289.0" text="Cost" />
-      <TextField layoutX="334.0" layoutY="285.0" promptText="Insert number in s/." />
-      <TextField layoutX="334.0" layoutY="229.0" promptText="Insert number " />
-      <TextField layoutX="334.0" layoutY="172.0" promptText="Insert street + number" />
-      <Button fx:id="sSaveVenueButton" layoutX="280.0" layoutY="347.0" mnemonicParsing="false" text="Save" />
+      <TextField fx:id="cCostTxt" layoutX="334.0" layoutY="285.0" promptText="Insert number in s/." />
+      <TextField fx:id="cCapacityTxt" layoutX="334.0" layoutY="229.0" promptText="Insert number " />
+      <TextField fx:id="cAddressTxt" layoutX="334.0" layoutY="172.0" promptText="Insert street + number" />
+      <Button fx:id="saveButton" layoutX="280.0" layoutY="347.0" mnemonicParsing="false" onAction="#saveBtn" text="Save" />
       <Label layoutX="182.0" layoutY="124.0" text="Venue Name" />
-      <TextField layoutX="334.0" layoutY="120.0" promptText="Insert letters" />
+      <TextField fx:id="cNameTxt" layoutX="334.0" layoutY="120.0" promptText="Insert letters" />
    </children>
 </AnchorPane>

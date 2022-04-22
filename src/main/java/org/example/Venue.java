@@ -3,46 +3,50 @@ package org.example;
 public class Venue {
 
     public Venue(String name, String address, Integer capacity, Double cost) {
-        Name = name;
-        Address = address;
-        Capacity = capacity;
-        Cost = cost;
+        name = name;
+        address = address;
+        capacity = capacity;
+        cost = cost;
     }
-String Name;
-String Address;
+String name;
+String address;
+
+    public Venue() {
+
+    }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        name = name;
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
     public void setAddress(String address) {
-        Address = address;
+        address = address;
     }
 
     public Integer getCapacity() {
-        return Capacity;
+        return capacity;
     }
 
     public void setCapacity(Integer capacity) {
-        Capacity = capacity;
+        capacity = capacity;
     }
 
     public Double getCost() {
-        return Cost;
+        return cost;
     }
 
     public void setCost(Double cost) {
-        Cost = cost;
+        cost = cost;
     }
 
-    Integer Capacity;
-Double Cost;
+    Integer capacity;
+Double cost;
 }
