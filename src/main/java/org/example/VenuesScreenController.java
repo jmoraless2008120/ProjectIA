@@ -19,19 +19,18 @@ public class VenuesScreenController {
     public TextField cNameTxt;
 
 
+
     @FXML
     private void switchToMainScreen() throws IOException {
         App.setRoot("MainScreen");
     }
 
     public void initialize(){
-
        venues.add(new Venue("Newton College", "Ricardo Elias Aparicio 240", 500, 1300.67));
     }
 
 
    public void saveBtn(ActionEvent actionEvent) {
-
         venues.add(new Venue(cNameTxt.getText(), cAddressTxt.getText(), (int) Integer.parseInt(cCostTxt.getText()), (double) Integer.parseInt(cCapacityTxt.getText())));
        for (Venue v: venues) {
            System.out.print(v.getName());

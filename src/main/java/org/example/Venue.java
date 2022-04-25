@@ -3,10 +3,7 @@ package org.example;
 public class Venue {
 
     public Venue(String name, String address, Integer capacity, Double cost) {
-        name = name;
-        address = address;
-        capacity = capacity;
-        cost = cost;
+
     }
 String name;
 String address;

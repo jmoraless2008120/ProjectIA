@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -18,24 +16,19 @@
             <Font name="Segoe Script" size="20.0" />
          </font>
       </Label>
-      <DatePicker layoutX="319.0" layoutY="102.0" promptText="mm/dd/yy" />
-      <Separator layoutX="297.0" layoutY="146.0" orientation="VERTICAL" prefHeight="182.0" prefWidth="0.0" />
-      <Label layoutX="186.0" layoutY="166.0" text="People Invited" />
-      <Label layoutX="178.0" layoutY="251.0" text="Hour Availability" />
-      <Label layoutX="205.0" layoutY="292.0" text="Event Type" />
-      <TextField layoutX="331.0" layoutY="162.0" promptText="Insert number" />
-      <TextField layoutX="332.0" layoutY="247.0" promptText="Insert time (00:00)" />
-      <ChoiceBox fx:id="eEventTypeDropBox" layoutX="332.0" layoutY="288.0" prefWidth="150.0" />
+      <DatePicker layoutX="299.0" layoutY="102.0" promptText="mm/dd/yy" />
+      <Separator layoutX="383.0" layoutY="148.0" orientation="VERTICAL" prefHeight="182.0" prefWidth="0.0" />
+      <Label layoutX="279.0" layoutY="166.0" text="People Invited" />
+      <Label layoutX="273.0" layoutY="259.0" text="Hour Availability" />
+      <Label layoutX="288.0" layoutY="301.0" text="Event Type" />
+      <TextField fx:id="peopleInvitedtxt" layoutX="405.0" layoutY="162.0" promptText="Insert number" />
+      <TextField fx:id="hourAvailabilitytxt" layoutX="405.0" layoutY="255.0" promptText="e.g.(07.30-2.30)" />
       <Button fx:id="tercaryButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToMainScreen" text="Return" />
-      <Button fx:id="sSaveEventButton" layoutX="276.0" layoutY="351.0" mnemonicParsing="false" text="Save" />
-      <MenuButton fx:id="venueSelectionDropBox" layoutX="117.0" layoutY="102.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" text="Venue Selection">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Action 1" />
-          <MenuItem mnemonicParsing="false" text="Action 2" />
-        </items>
-      </MenuButton>
-      <Label layoutX="194.0" layoutY="210.0" text="Ticket Price" />
-      <TextField layoutX="332.0" layoutY="206.0" promptText="Insert price in s/." />
+      <Button fx:id="sSaveEventButton" layoutX="366.0" layoutY="349.0" mnemonicParsing="false" text="Save" />
+      <Label layoutX="287.0" layoutY="210.0" text="Ticket Price" />
+      <TextField fx:id="ticketPricetxt" layoutX="405.0" layoutY="206.0" promptText="Insert price in s/." />
+      <TableView fx:id="venueTable" layoutX="40.0" layoutY="127.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="eventTypetxt" layoutX="405.0" layoutY="297.0" promptText="e.g.(concert, festival, etc.)" />
    </children>
 
 </AnchorPane>
