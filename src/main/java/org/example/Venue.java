@@ -2,14 +2,16 @@ package org.example;
 
 public class Venue {
 
+    String name;
+    String address;
+    Integer capacity;
+    Double cost;
+
     public Venue(String name, String address, Integer capacity, Double cost) {
-
-    }
-String name;
-String address;
-
-    public Venue() {
-
+        this.name = name;
+        this.address = address;
+        this.capacity = capacity;
+        this.cost = cost;
     }
 
     public String getName() {
@@ -44,6 +46,4 @@ String address;
         cost = cost;
     }
 
-    Integer capacity;
-Double cost;
 }

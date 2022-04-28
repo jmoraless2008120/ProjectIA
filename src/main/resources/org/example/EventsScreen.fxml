@@ -16,19 +16,18 @@
             <Font name="Segoe Script" size="20.0" />
          </font>
       </Label>
-      <DatePicker layoutX="299.0" layoutY="102.0" promptText="mm/dd/yy" />
+      <DatePicker fx:id="calendartxt" layoutX="299.0" layoutY="102.0" promptText="mm/dd/yy" />
       <Separator layoutX="383.0" layoutY="148.0" orientation="VERTICAL" prefHeight="182.0" prefWidth="0.0" />
       <Label layoutX="279.0" layoutY="166.0" text="People Invited" />
       <Label layoutX="273.0" layoutY="259.0" text="Hour Availability" />
       <Label layoutX="288.0" layoutY="301.0" text="Event Type" />
       <TextField fx:id="peopleInvitedtxt" layoutX="405.0" layoutY="162.0" promptText="Insert number" />
-      <TextField fx:id="hourAvailabilitytxt" layoutX="405.0" layoutY="255.0" promptText="e.g.(07.30-2.30)" />
+      <TextField fx:id="hourAvailabilitytxt" layoutX="405.0" layoutY="255.0" promptText="e.g.(07.30 to 2.30)" />
       <Button fx:id="tercaryButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToMainScreen" text="Return" />
-      <Button fx:id="sSaveEventButton" layoutX="366.0" layoutY="349.0" mnemonicParsing="false" text="Save" />
       <Label layoutX="287.0" layoutY="210.0" text="Ticket Price" />
       <TextField fx:id="ticketPricetxt" layoutX="405.0" layoutY="206.0" promptText="Insert price in s/." />
-      <TableView fx:id="venueTable" layoutX="40.0" layoutY="127.0" prefHeight="200.0" prefWidth="200.0" />
       <TextField fx:id="eventTypetxt" layoutX="405.0" layoutY="297.0" promptText="e.g.(concert, festival, etc.)" />
+      <Button fx:id="findVenueBtn" layoutX="362.0" layoutY="348.0" mnemonicParsing="false" onAction="#findVenueBtnAction" text="Save" />
    </children>
 
 </AnchorPane>
