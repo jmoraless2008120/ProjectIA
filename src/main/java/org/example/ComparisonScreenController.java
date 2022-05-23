@@ -11,4 +11,7 @@ public class ComparisonScreenController {
     private void switchToMainScreen() throws IOException {
         App.setRoot("MainScreen");
     }
+
+    public void saveEventToJSon(ActionEvent actionEvent) {
+    }
 }

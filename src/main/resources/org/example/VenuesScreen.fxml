@@ -4,26 +4,43 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.VenuesScreenController">
    <children>
-      <Button fx:id="thirdButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToMainScreen" text="Return" />
+      <Button fx:id="thirdButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToMainScreen" text="Home" />
       <Label layoutX="240.0" layoutY="39.0" text="Add Venue">
          <font>
             <Font name="Segoe Script" size="20.0" />
          </font>
       </Label>
-      <Separator layoutX="286.0" layoutY="129.0" orientation="VERTICAL" prefHeight="169.0" prefWidth="6.0" />
+      <Separator layoutX="295.0" layoutY="109.0" orientation="VERTICAL" prefHeight="213.0" prefWidth="5.0" />
       <Label layoutX="195.0" layoutY="176.0" text="Address" />
       <Label layoutX="193.0" layoutY="233.0" text="Capacity" />
       <Label layoutX="216.0" layoutY="289.0" text="Cost" />
       <TextField fx:id="cCostTxt" layoutX="334.0" layoutY="285.0" promptText="Insert number in s/." />
       <TextField fx:id="cCapacityTxt" layoutX="334.0" layoutY="229.0" promptText="Insert number " />
       <TextField fx:id="cAddressTxt" layoutX="334.0" layoutY="172.0" promptText="Insert street + number" />
-      <Button fx:id="saveButton" layoutX="280.0" layoutY="347.0" mnemonicParsing="false" onAction="#saveBtn" text="Save" />
+      <Button fx:id="saveButton" layoutX="314.0" layoutY="343.0" mnemonicParsing="false" onAction="#saveBtn" text="Save" />
       <Label layoutX="182.0" layoutY="124.0" text="Venue Name" />
       <TextField fx:id="cNameTxt" layoutX="334.0" layoutY="120.0" promptText="Insert letters" />
+      <ImageView fitHeight="52.0" fitWidth="90.0" layoutX="216.0" layoutY="330.0">
+         <image>
+            <Image url="@../../../../../../../Downloads/arrow.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="332.0" prefHeight="15.0" prefWidth="149.0" text="Once you save your venue,">
+         <font>
+            <Font name="MS Outlook" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="347.0" prefHeight="15.0" prefWidth="196.0" text="you'll be  directed to ADD an EVENT">
+         <font>
+            <Font name="MS Outlook" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

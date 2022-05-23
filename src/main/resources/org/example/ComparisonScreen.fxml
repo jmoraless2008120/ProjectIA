@@ -41,6 +41,7 @@
       <TextField editable="false" layoutX="37.0" layoutY="253.0" prefHeight="25.0" prefWidth="115.0" promptText="Ticket Prices" />
       <Separator layoutX="348.0" layoutY="163.0" prefWidth="200.0" />
       <Separator layoutX="350.0" layoutY="233.0" prefWidth="200.0" />
-      <ListView layoutX="185.0" layoutY="131.0" prefHeight="135.0" prefWidth="115.0" />
+      <ListView layoutX="185.0" layoutY="116.0" prefHeight="172.0" prefWidth="115.0" />
+      <Button layoutX="256.0" layoutY="324.0" mnemonicParsing="false" onAction="#saveEventToJSon" text="Save Event" />
    </children>
 </AnchorPane>

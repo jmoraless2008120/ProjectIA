@@ -17,22 +17,23 @@
             <Font name="Javanese Text" size="22.0" />
          </font>
       </Label>
-      <Button layoutX="270.0" layoutY="237.0" mnemonicParsing="false" onAction="#switchToEventScreen" prefHeight="25.0" prefWidth="80.0" text="Add Event">
+      <Button layoutX="270.0" layoutY="236.0" mnemonicParsing="false" onAction="#switchToEventScreen" prefHeight="25.0" prefWidth="80.0" text="Add Event">
          <font>
             <Font name="Constantia" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="venueButton" layoutX="270.0" layoutY="167.0" mnemonicParsing="false" onAction="#switchToVenueScreen" prefHeight="25.0" prefWidth="80.0" text="Add Venue">
+      <Button fx:id="venueButton" layoutX="264.0" layoutY="166.0" mnemonicParsing="false" onAction="#switchToVenueScreen" prefHeight="25.0" prefWidth="80.0" text="Add Venue">
          <font>
             <Font name="Constantia" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="270.0" layoutY="301.0" mnemonicParsing="false" onAction="#switchToComparisonScreen" prefHeight="27.0" prefWidth="80.0" text="Comparison">
+      <Button layoutX="270.0" layoutY="308.0" mnemonicParsing="false" onAction="#switchToComparisonScreen" prefHeight="27.0" prefWidth="80.0" text="Comparison">
          <font>
             <Font name="Constantia" size="12.0" />
          </font>
       </Button>
       <Label layoutX="282.0" layoutY="142.0" text="First you ..." />
       <Label layoutX="279.0" layoutY="213.0" text="Moreover ..." />
+      <Label layoutX="200.0" layoutY="284.0" text="Then, find the venue that best suits you ..." />
    </children>
 </AnchorPane>
