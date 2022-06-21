@@ -20,8 +20,8 @@ public class MainScreenController {
      c) when the user creates a new event, selecting a venue, save it to another arraylist.
 
      3. Save this information to a json file.
-
     **/
+
     @FXML
     public void switchToEventScreen(ActionEvent actionEvent) throws IOException {
         App.setRoot("EventsScreen");

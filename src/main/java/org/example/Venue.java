@@ -2,10 +2,10 @@ package org.example;
 
 public class Venue {
 
-    String name;
-    String address;
-    Integer capacity;
-    Double cost;
+    private String name; //OOP - encapsulation
+    private String address;
+   private Integer capacity;
+   private  Double cost;
 
     public Venue(String name, String address, Integer capacity, Double cost) {
         this.name = name;
@@ -46,4 +46,10 @@ public class Venue {
         cost = cost;
     }
 
+    //polymorphism
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

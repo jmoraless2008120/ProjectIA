@@ -27,7 +27,7 @@
       <Button fx:id="saveButton" layoutX="314.0" layoutY="343.0" mnemonicParsing="false" onAction="#saveBtn" text="Save" />
       <Label layoutX="182.0" layoutY="124.0" text="Venue Name" />
       <TextField fx:id="cNameTxt" layoutX="334.0" layoutY="120.0" promptText="Insert letters" />
-      <ImageView fitHeight="52.0" fitWidth="90.0" layoutX="216.0" layoutY="330.0">
+      <ImageView fitHeight="52.0" fitWidth="90.0" layoutX="215.0" layoutY="330.0">
          <image>
             <Image url="@../../../../../../../Downloads/arrow.png" />
          </image>
