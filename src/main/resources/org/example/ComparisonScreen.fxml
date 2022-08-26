@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ComparisonScreenController">
    <children>
-      <Button fx:id="forthButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToMainScreen" text="Return" />
+      <Button fx:id="forthButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToMainScreen" text="Home" />
       <Label layoutX="236.0" layoutY="14.0" text="Comparison">
          <font>
             <Font name="Segoe Script" size="20.0" />
@@ -47,8 +47,8 @@
       <Label layoutX="43.0" layoutY="165.0" text="Event Hours" />
       <Label layoutX="33.0" layoutY="227.0" text="Ticket Revenue" />
       <ChoiceBox fx:id="VenueChoiceBox1" layoutX="153.0" layoutY="120.0" prefHeight="25.0" prefWidth="128.0" />
-      <ChoiceBox fx:id="VenueChoiceBox2" layoutX="154.0" layoutY="187.0" onMouseClicked="#setVenueDetails2" prefHeight="25.0" prefWidth="128.0" />
-      <ChoiceBox fx:id="VenueChoiceBox3" layoutX="154.0" layoutY="256.0" onMouseClicked="#setVenueDetails3" prefHeight="25.0" prefWidth="128.0" />
+      <ChoiceBox fx:id="VenueChoiceBox2" layoutX="154.0" layoutY="187.0" prefHeight="25.0" prefWidth="128.0" />
+      <ChoiceBox fx:id="VenueChoiceBox3" layoutX="154.0" layoutY="256.0" prefHeight="25.0" prefWidth="128.0" />
       <CheckBox fx:id="checkBoxVenue1" layoutX="292.0" layoutY="124.0" mnemonicParsing="false" />
       <CheckBox fx:id="checkBoxVenue2" layoutX="292.0" layoutY="191.0" mnemonicParsing="false" />
       <CheckBox fx:id="checkBoxVenue3" layoutX="292.0" layoutY="260.0" mnemonicParsing="false" />

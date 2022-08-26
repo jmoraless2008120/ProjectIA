@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 
 public class MainScreenController {
 
@@ -24,15 +25,18 @@ public class MainScreenController {
 
     @FXML
     public void switchToEventScreen(ActionEvent actionEvent) throws IOException {
-        App.setRoot("EventsScreen");
+        App.setRoot("EventsScreen"); //will direct the user to the Events screen
     }
-
     @FXML
     public void switchToVenueScreen(ActionEvent actionEvent) throws IOException {
-        App.setRoot("VenuesScreen");
+        App.setRoot("VenuesScreen"); //will direct the user to the Venues screen
     }
     @FXML
     public void switchToComparisonScreen(ActionEvent actionEvent) throws IOException {
-        App.setRoot("ComparisonScreen");
+        App.setRoot("ComparisonScreen"); //will direct the user to the Comparison Screen
+    }
+    @FXML
+    public void switchToSavedEventsScreen(ActionEvent actionEvent) throws IOException {
+        App.setRoot("SavedEventsScreen"); //will direct user to the Saved Events Screen
     }
 }

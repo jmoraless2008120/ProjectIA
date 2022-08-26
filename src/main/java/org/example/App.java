@@ -27,7 +27,6 @@ public class App extends Application {
     public static ObservableList<Event> events = FXCollections.observableArrayList();
     public static ObservableList<Venue> venues = FXCollections.observableArrayList();
 
-
     @Override
     public void start(Stage stage) throws IOException {
 

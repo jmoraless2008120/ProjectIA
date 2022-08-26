@@ -41,25 +41,41 @@ public class VenuesScreenController {
     public void initialize() {
         //App.venues.add(new Venue("Newton College", "Ricardo Elias Aparicio 240", 500, 1300.67));
 
-
     }
-
-
 
     public void saveBtn(ActionEvent actionEvent) throws IOException {
         int notFilledIn = 0;
-        String errorMessage = ""; //error pop-up message will display on screen
+        int wrongDoubleDataType = 0;
+        int wrongIntegerDataType = 0;
+        String errorMessage = ""; //error-message will display on screen
+        try{
+            Double.parseDouble(cCostTxt.getText()); //this is going to try to change the text to a double
+        }catch(Exception e){ //if it cannot, it will produce an error
+            wrongDoubleDataType++;
+        }
+        try{
+            Integer.parseInt(cCapacityTxt.getText()); //this is going to try to change the text into n integer
+        }catch(Exception e){ //if it cannot, it will produce an error.
+            wrongIntegerDataType++;
+        }
+
         if (cCostTxt.getText().isEmpty()) {
             errorMessage = "You need to insert a cost, This is a required field";
             notFilledIn++; //if date not inserted, error message displayed regarding missing date
-        } else if (cCapacityTxt.getText().isEmpty()) {
+        } if (wrongDoubleDataType!=0) {
+            errorMessage = "You need to insert a cost as decimal number (e.g 6.40), This is a required field";
+            notFilledIn++; //if date not inserted, error message displayed regarding missing date
+        }  else if (cCapacityTxt.getText().isEmpty()) {
             errorMessage = "Capacity needs to be inputted, This is a required field";
             notFilledIn++; //if people invited box not filled, error message displayed
-        } else if (cAddressTxt.getText().isEmpty()) {
+        } if (wrongIntegerDataType!=0) {
+            errorMessage = "Capacity needs to be inputted as a whole number (e.g 12), This is a required field";
+            notFilledIn++; //if date not inserted, error message displayed regarding missing date
+        }else if (cAddressTxt.getText().isEmpty()) {
             errorMessage = "You need to insert the Address, This is a required field";
-            notFilledIn++;//if ticket price box not filled, error message displayed
+            notFilledIn++; //if ticket price box not filled, error message displayed
         } else if (cNameTxt.getText().isEmpty()) {
-            errorMessage = "Insertvenue name, This is a required field";
+            errorMessage = "Insert venue name, This is a required field";
             notFilledIn++; //if time available box not filled, error message displayed
         }
 
@@ -68,12 +84,11 @@ public class VenuesScreenController {
         cCostTxt.clear();
         cCapacityTxt.clear();
         cAddressTxt.clear();
-        cNameTxt.clear();
+        cNameTxt.clear(); //it will clear the text boxes for the next operation
         App.saveVenuesToJSon();
         App.setRoot("EventsScreen");
-        }else{
+        }else{ //condition that if count is not 0 then the program will output an error message because something is not correct
             JOptionPane.showMessageDialog(null, errorMessage);
-
         }
 
     }

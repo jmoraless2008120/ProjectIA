@@ -28,9 +28,6 @@
       <Label layoutX="182.0" layoutY="124.0" text="Venue Name" />
       <TextField fx:id="cNameTxt" layoutX="334.0" layoutY="120.0" promptText="Insert letters" />
       <ImageView fitHeight="52.0" fitWidth="90.0" layoutX="215.0" layoutY="330.0">
-         <image>
-            <Image url="@../../../../../../../Downloads/arrow.png" />
-         </image>
       </ImageView>
       <Label layoutX="14.0" layoutY="332.0" prefHeight="15.0" prefWidth="149.0" text="Once you save your venue,">
          <font>

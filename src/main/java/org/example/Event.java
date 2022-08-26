@@ -8,6 +8,7 @@ public class Event {
     double ticketPrice; // e.g. 150.50, 85.30, etc. price of ticket can be inputted with decimals
     int hourAvailability; //inputted as amount of hours the event is going to last
     String eventType; //e.g. concert, party, disco, bar, birthday, etc.
+    Venue chosenVenue;
 
     public Event(Date date, int peopleInvited, double ticketPrice, int hourAvailability, String eventType) {
         this.date = date;
@@ -15,6 +16,14 @@ public class Event {
         this.ticketPrice = ticketPrice;
         this.hourAvailability = hourAvailability;
         this.eventType = eventType;
+    }
+
+    public Venue getChosenVenue() {
+        return chosenVenue;
+    }
+
+    public void setChosenVenue(Venue chosenVenue) {
+        this.chosenVenue = chosenVenue;
     }
 
     public Date getDate() {

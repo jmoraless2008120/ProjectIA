@@ -1,11 +1,11 @@
 package org.example;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 
 import javax.swing.*;
@@ -29,6 +29,9 @@ public class ComparisonScreenController {
     public TextField profitSalesVenue3;
     public TextField capacityVenue3;
     public TextField addressVenue3;
+    public CheckBox checkBoxVenue1;
+    public CheckBox checkBoxVenue2;
+    public CheckBox checkBoxVenue3;
 
     public void  initialize(){
         try {
@@ -77,28 +80,45 @@ public class ComparisonScreenController {
             addressVenue3.setText(String.valueOf(App.venues.get(VenueChoiceBox3.getSelectionModel().getSelectedIndex()).getAddress()));
         });
 
-        //TO DO
-        /**
-         * 1. If the capacity of the venue is smaller than the event number of people, make the venueCapacity text box RED.
-         * 2. Imagine you have lots of venues in your list of venues. Make the program automatically select the best 3 (calculate profit first for each event and then pick the most proffitable three.
-         *
-         */
+        EventHandler checkboxClicked = new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                if (event.getSource() instanceof CheckBox) {
+                    CheckBox chk = (CheckBox) event.getSource();
+                    if(chk.getId().equals("checkBoxVenue1")){
+                        checkBoxVenue2.setSelected(false);
+                        checkBoxVenue3.setSelected(false);
+                    }else if(chk.getId().equals("checkBoxVenue2")){
+                        checkBoxVenue1.setSelected(false);
+                        checkBoxVenue3.setSelected(false);
+                    }else if(chk.getId().equals("checkBoxVenue3")){
+                        checkBoxVenue2.setSelected(false);
+                        checkBoxVenue1.setSelected(false);
+                    }
+                }
+            }
+        };
+        checkBoxVenue1.setOnAction(checkboxClicked);
+        checkBoxVenue2.setOnAction(checkboxClicked);
+        checkBoxVenue3.setOnAction(checkboxClicked);
+
     }
     @FXML
     private void switchToMainScreen() throws IOException {
         App.setRoot("MainScreen");
     }
 
-    public void saveEventToJSon(ActionEvent actionEvent) {
+    public void saveEventToJSon(ActionEvent actionEvent) throws IOException{
+
+        if(checkBoxVenue1.isSelected()){
+            App.events.get(App.events.size()-1).setChosenVenue((Venue) VenueChoiceBox1.getSelectionModel().getSelectedItem());
+        }else  if(checkBoxVenue2.isSelected()){
+            App.events.get(App.events.size()-1).setChosenVenue((Venue) VenueChoiceBox2.getSelectionModel().getSelectedItem());
+        }else if(checkBoxVenue3.isSelected()){
+            App.events.get(App.events.size()-1).setChosenVenue((Venue) VenueChoiceBox3.getSelectionModel().getSelectedItem());
+        }
+        App.savEventsToJSon();
+        App.setRoot("SavedEventsScreen");
     }
 
-    public void setVenueDetails1(MouseEvent mouseEvent) {
-
-    }
-
-    public void setVenueDetails2(MouseEvent mouseEvent) {
-    }
-
-    public void setVenueDetails3(MouseEvent mouseEvent) {
-    }
 }

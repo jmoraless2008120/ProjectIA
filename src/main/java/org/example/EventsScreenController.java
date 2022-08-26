@@ -35,19 +35,29 @@ public class EventsScreenController {
     }
 
     public void initialize() {
+
     }
 
-
     public void findVenueBtnAction(ActionEvent actionEvent) throws IOException {
-        int notFilledIn=0;
-        String errorMessage = ""; //error pop-up message will display on screen
+        int notFilledIn=0; //creates count method for error-message
+        int wrongIntegerDataType =0;
+        String errorMessage = ""; //error-message will display on screen
+        try{
+            Integer.parseInt(peopleInvitedtxt.getText());
+        }catch (Exception e){
+            wrongIntegerDataType++;
+        }
+
         if (calendartxt.getValue() == null) {
             errorMessage = "You need to insert a date, This is a required field";
             notFilledIn++; //if date not inserted, error message displayed regarding missing date
         }else if (peopleInvitedtxt.getText().isEmpty()){
             errorMessage = "People Invited needs to be inputted, This is a required field";
             notFilledIn++; //if people invited box not filled, error message displayed
-        }else if (ticketPricetxt.getText().isEmpty()){
+        }else if (wrongIntegerDataType!=0) {
+            errorMessage = "People Invited needs to be inputted as a whole number, This is a required field";
+            notFilledIn++; //if date not inserted, error message displayed regarding missing date
+        } else if (ticketPricetxt.getText().isEmpty()){
             errorMessage = "You need to insert Ticket Price, This is a required field";
             notFilledIn++;//if ticket price box not filled, error message displayed
         }else if (hourAvailabilitytxt.getText().isEmpty()){
@@ -58,7 +68,6 @@ public class EventsScreenController {
             notFilledIn++; //if people event type not filled, error message displayed
         }
 
-
         if(notFilledIn==0) {
             LocalDate localdate = calendartxt.getValue();
             Instant instant = Instant.from(localdate.atStartOfDay(ZoneId.systemDefault()));
@@ -67,9 +76,9 @@ public class EventsScreenController {
             peopleInvitedtxt.clear();
             ticketPricetxt.clear();
             hourAvailabilitytxt.clear();
-            eventTypetxt.clear();
+            eventTypetxt.clear(); //all boxes in events screen will clear for next operation
             App.savEventsToJSon();
-            App.setRoot("ComparisonScreen");
+            App.setRoot("ComparisonScreen"); //will direct program to the comparison screen
         }else{
             JOptionPane.showMessageDialog(null, errorMessage);
 
